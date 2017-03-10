@@ -1,0 +1,10 @@
+[Unit]
+Description=Prometheus Server
+Documentation=https://github.com/prometheus/prometheus
+
+[Service]
+ExecStart=/usr/bin/prometheus
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
