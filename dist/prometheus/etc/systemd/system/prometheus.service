@@ -3,7 +3,7 @@ Description=Prometheus Server
 Documentation=https://github.com/prometheus/prometheus
 
 [Service]
-ExecStart=/usr/bin/prometheus
+ExecStart=/usr/bin/prometheus -config.file "/etc/prometheus/config.yml"
 ExecReload=/bin/kill -HUP $MAINPID
 
 [Install]
