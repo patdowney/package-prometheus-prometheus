@@ -1,6 +1,6 @@
 
 PACKAGE_PRODUCT=prometheus
-PACKAGE_VERSION=1.7.0
+PACKAGE_VERSION=1.7.1
 PACKAGE_ARCH="386 amd64 armv6"
 
 default: package bintray
